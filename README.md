@@ -1,1 +1,1 @@
-My all the python projects are here whuch contains
+My all the python projects are here which contains
