@@ -28,10 +28,24 @@ class VolumeCalculator:
             raise ValueError("Missing dimensions: radius and/or height")
         return 3.14159 * (radius ** 2) * height
     
+    def calculate_cone_volume(self, dimensions):
+        radius = dimensions.get("radius")
+        height = dimensions.get("height")
+        if radius is None or height is None:
+            raise ValueError("Missing dimensions: radius and/or height")
+        return (1/3) * 3.14159 * (radius ** 2) * height
+    def calculate_ractangale_volume(self, dimensions):
+        length = dimensions.get("length")
+        width = dimensions.get("width")
+        height = dimensions.get("height")
+        if length is None or width is None or height is None:
+            raise ValueError("Missing dimensions: length and/or width and/or height")
+        return length * width * height
+    
     
 # Example usage:
 volume_calculator = VolumeCalculator()
-shape = input("Enter the shape (cube, sphere, cylinder): ").lower()
+shape = input("Enter the shape (cube, sphere, cylinder, cone, rectangular_prism): ").lower()
 dimensions = {}
 if shape == "cube":
     dimensions["side_length"] = float(input("Enter the side length of the cube: "))
@@ -40,6 +54,13 @@ elif shape == "sphere":
 elif shape == "cylinder":
     dimensions["radius"] = float(input("Enter the radius of the cylinder: "))
     dimensions["height"] = float(input("Enter the height of the cylinder: "))
+elif shape == "cone":
+    dimensions["radius"] = float(input("Enter the radius of the cone: "))
+    dimensions["height"] = float(input("Enter the height of the cone: "))
+elif shape == "rectangular_prism":
+    dimensions["length"] = float(input("Enter the length of the rectangular prism: "))
+    dimensions["width"] = float(input("Enter the width of the rectangular prism: "))
+    dimensions["height"] = float(input("Enter the height of the rectangular prism: "))
 
 try:
     volume = volume_calculator.calculate_volume(shape, dimensions)
@@ -47,5 +68,5 @@ try:
 except ValueError as e:    print(e)
 
 
-# This code defines a class `VolumeCalculator` with methods to calculate the volume of a cube, sphere, and cylinder based on user input.
+# This code defines a class `VolumeCalculator` with methods to calculate the volume of a cube, sphere, cone, rectangular and cylinder based on user input.
 # The user is prompted to enter the shape and its dimensions, and the corresponding volume is calculated and displayed.
