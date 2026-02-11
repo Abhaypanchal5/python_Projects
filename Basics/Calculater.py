@@ -19,3 +19,8 @@ else:
     exit()
 
 print("Result:", result)
+
+# this is a simple calculator program that takes two numbers and an operator as input from the user, 
+# performs the specified operation, and outputs the result. 
+# The program handles addition, subtraction, multiplication, and division, 
+# and also checks for division by zero to prevent errors.
