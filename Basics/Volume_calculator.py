@@ -6,6 +6,10 @@ class VolumeCalculator:
             return self.calculate_sphere_volume(dimensions)
         elif shape == "cylinder":
             return self.calculate_cylinder_volume(dimensions)
+        elif shape == "cone":
+            return self.calculate_cone_volume(dimensions)
+        elif shape == "rectanguler":
+            return self.calculate_ractangale_volume(dimensions)
         else:
             raise ValueError("Unsupported shape")
 
