@@ -29,7 +29,7 @@ def is_draw(board):
 
 def tic_tac_toe():
     board = [[" " for _ in range(3)] for _ in range(3)]
-    players = ["X", "O"]
+    players = ["O", "X"]
     current_player = random.choice(players)
     
     while True:
@@ -60,4 +60,5 @@ def tic_tac_toe():
         
            
 tic_tac_toe()
+
 
