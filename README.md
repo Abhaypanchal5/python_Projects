@@ -19,5 +19,5 @@ My all the python projects are here which contains
 
 - Link shortner (using Third-party API)
 
-- Password manager
+- Password Generator
      
