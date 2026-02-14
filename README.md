@@ -20,4 +20,8 @@ My all the python projects are here which contains
 - Link shortner (using Third-party API)
 
 - Password Generator
+
+- email list
+
+- Username and password storing 
      
