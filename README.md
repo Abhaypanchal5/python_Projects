@@ -24,4 +24,6 @@ My all the python projects are here which contains
 - email list
 
 - Random user and password generator
+
+- Email generator using first name and last name of user
      
