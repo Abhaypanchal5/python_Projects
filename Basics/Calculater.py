@@ -1,5 +1,5 @@
 num1 = int(input("Enter the first number: "))
-op = input("Enter the operator (+, -, *, /): ")
+op = input("Enter the operator (+, -, *, /, **): ")
 num2 = int(input("Enter the second number: "))
 
 if op == "+":
@@ -14,6 +14,8 @@ elif op == "/":
     else:
         print("Error: Division by zero is not allowed.")
         exit()
+elif op == "**":
+    result = num1 ** num2
 else:
     print("Invalid operator.")
     exit()
